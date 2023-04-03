@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="350.0" stylesheets="@CSS/Login-UpdatePin.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.atm.bankConnect.UpdatePinController">
+    <children>
+        <Label layoutX="101.0" layoutY="109.0" text="Insert New PIN" />
+      <TextField fx:id="textFieldNewPin" layoutX="101.0" layoutY="126.0" promptText="New PIN shown" />
+        <PasswordField fx:id="passwordFieldNewPin" layoutX="101.0" layoutY="126.0" promptText="New PIN hidden" stylesheets="@CSS/PasswordField.css" />
+        <Label layoutX="101.0" layoutY="175.0" text="Confirm New PIN" />
+      <Label layoutX="101.0" layoutY="175.0" stylesheets="@CSS/Label.css" text="Confirm" />
+      <TextField fx:id="textFieldConfirmNewPin" layoutX="101.0" layoutY="192.0" promptText="Confirm new PIN shown" />
+        <PasswordField fx:id="passwordFieldConfirmPin" layoutX="101.0" layoutY="192.0" promptText="Confirm new PIN hidden" stylesheets="@CSS/PasswordField.css" />
+        <Button cancelButton="true" layoutX="101.0" layoutY="258.0" mnemonicParsing="false" onAction="#cancel" stylesheets="@CSS/Button.css">
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/cancel.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+        <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="180.0" layoutY="258.0" mnemonicParsing="false" onAction="#confirm" stylesheets="@CSS/Button.css" textAlignment="RIGHT">
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/ok.fw.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label fx:id="labelErrorMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="103.0" layoutY="228.0" textAlignment="CENTER" textFill="RED" />
+      <CheckBox layoutX="263.0" layoutY="130.0" mnemonicParsing="false" onAction="#changeNewPinVisibility" stylesheets="@CSS/Checkbox.css" />
+      <CheckBox layoutX="263.0" layoutY="196.0" mnemonicParsing="false" onAction="#changeConfirmNewPinVisibility" stylesheets="@CSS/Checkbox.css" />
+    </children>
+</AnchorPane>

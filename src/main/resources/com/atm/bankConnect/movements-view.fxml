@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@CSS/Movements.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.atm.bankConnect.MovementsController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#showOnlyDeposits">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/listDeposits.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="87.0" layoutY="14.0" mnemonicParsing="false" onAction="#showOnlyWithdraws">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/listWithdraws.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="158.0" layoutY="14.0" mnemonicParsing="false" onAction="#showOnlyTransfers">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/listTransfers.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="233.0" layoutY="14.0" mnemonicParsing="false" onAction="#showAll">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/listAll.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TableView fx:id="tableViewMovements" layoutX="14.0" layoutY="67.0" prefHeight="321.0" prefWidth="576.0" stylesheets="@CSS/TableView.css">
+        <columns>
+          <TableColumn fx:id="tableColumnDate" prefWidth="194.0" text="DATE" />
+          <TableColumn fx:id="tableColumnType" prefWidth="270.0" text="TYPE" />
+            <TableColumn fx:id="tableColumnValue" prefWidth="111.0" text="VALUE" />
+        </columns>
+      </TableView>
+      <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="545.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" textAlignment="RIGHT">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/back.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>

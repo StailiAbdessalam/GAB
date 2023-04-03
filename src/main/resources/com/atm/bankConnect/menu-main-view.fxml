@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@CSS/MenuMain.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.atm.bankConnect.MenuMainController">
+    <children>
+        <Label fx:id="labelWelcome" layoutX="88.0" layoutY="54.0" stylesheets="@CSS/Label.css" />
+        <Label fx:id="labelBalance" layoutX="88.0" layoutY="101.0" stylesheets="@CSS/Label.css" />
+      <Label fx:id="labelBalance1" layoutX="88.0" layoutY="101.0" text="Account balan" />
+      <Label fx:id="labelMonthlyPlafond" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="315.0" layoutY="54.0" stylesheets="@CSS/Label.css" textAlignment="RIGHT" />
+      <Label fx:id="labelPlafondBalance" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="315.0" layoutY="101.0" stylesheets="@CSS/Label.css" textAlignment="RIGHT" />
+        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="88.0" layoutY="146.0" mnemonicParsing="false" onAction="#deposit" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/deposit.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="146.0" mnemonicParsing="false" onAction="#withdraw" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/withdraw.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="440.0" layoutY="146.0" mnemonicParsing="false" onAction="#transfer" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/transfer.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="88.0" layoutY="230.0" mnemonicParsing="false" onAction="#movements" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/listAll.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+        <Button fx:id="buttonMakeLoan" alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="230.0" mnemonicParsing="false" onAction="#makeLoan" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/makeLoan.png" />
+               </image></ImageView>
+         </graphic></Button>
+        <Button fx:id="buttonPayLoan" alignment="CENTER" contentDisplay="CENTER" layoutX="440.0" layoutY="230.0" mnemonicParsing="false" onAction="#payLoan" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/payLoan.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="512.0" layoutY="335.0" mnemonicParsing="false" onAction="#logout" stylesheets="@CSS/Button.css">
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logout.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+    </children>
+</AnchorPane>
